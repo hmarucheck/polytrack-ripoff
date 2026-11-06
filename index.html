@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Ripoff Polytrack</title>
-  <meta http-equiv="refresh" content="0; url=https://www.kodub.com/apps/polytrack">
-  <script>window.location.replace("https://www.kodub.com/apps/polytrack");</script>
+  <script>
+    var url = "https://www.kodub.com/apps/polytrack";
+    try { window.top.location.replace(url); } catch (e) { window.location.replace(url); }
+  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="https://www.kodub.com/apps/polytrack">Polytrack</a>…</p>
+  <p>Redirecting to <a href="https://www.kodub.com/apps/polytrack" target="_top">Polytrack</a>… If nothing happens, click the link.</p>
 </body>
 </html>
